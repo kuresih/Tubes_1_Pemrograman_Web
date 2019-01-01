@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script type="text/javascript" src="tinymce/tinymce.min.js"></script>
+    <script type="text/javascript">
+        tinymce.init({
+            selector: "#mytextarea"
+        });
+    </script>
+
+
+    <title>Admin Page</title>
+
+    <!-- Bootstrap core CSS-->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Page level plugin CSS-->
+    <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+  </head>
+
+<body id="page-top">
+
+    <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
+
+      <a class="navbar-brand mr-1" href="index.html">PUISIku</a>
+
+      <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      
+      <!-- Navbar -->
+      <ul class="navbar-nav ml-auto ml-md-0">
+        <li class="nav-item dropdown no-arrow">
+          <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-user-circle fa-fw"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+            <a class="dropdown-item" href="#">Settings</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Logout</a>
+          </div>
+        </li>
+      </ul>
+
+    </nav>
+
+    <div id="wrapper">
+
+      <!-- Sidebar -->
+      <ul class="sidebar navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.php">
+            <span>Home</span>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span>Kategori</span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+            <a class="dropdown-item" href="login.html">Romance</a>
+            <a class="dropdown-item" href="register.html">Islami</a>
+            <a class="dropdown-item" href="forgot-password.html">Pendidikan</a>
+            <div class="dropdown-divider"></div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Buatpuisibaru.html">
+            <span>Tulis Puisi Baru</span></a>
+        </li>
+      </ul>
+
+      <div id="content-wrapper">
+
+        <div class="container-fluid">
+
+          <!-- Breadcrumbs-->
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="#">Dashboard</a>
+            </li>
+            <li class="breadcrumb-item active">Overview</li>
+          </ol>
+          <center><h1>Tulis Puisi Mereka!</h1>
+    <p>Dengan membantu menulis dan mempublikasikan karya orang lain maka engkau ikut andil dalam kesuksesannya!</p></center>
+    <form method="post" action="aksipuisi.php">
+       <table>
+        <tr>
+            <td>Judul</td>
+            <td>:</td>
+            <td><input type="text" name="judul"></td> <br>
+        </tr>
+        <tr>
+            <td>Nama Penulis</td>
+            <td>:</td>
+            <td><input type="text" name="nama_penulis"></td> <br>
+        </tr>
+        <tr>
+          <td>Kategori</td>
+            <td>:</td>
+            <td><select name="kategori">
+              <option value="Romance">Romance</option>
+              <option value="Pendidikan">Pendidikan</option>
+              <option value="Islami">Islami</option>
+              <option value="Harapan">Harapan</option>
+            </select></td>
+        </tr>
+        <tr>
+          <td></td>
+        </tr>
+        <tr>
+            <td>Isi Puisi</td>
+            <td>:</td>
+            <td><textarea id="mytextarea" name="isi_puisi">Tulis Puisimu Disini...</textarea><br>
+            <input type="submit" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" name="ttambah"></a>
+        </tr>
+        </form>
+        </table>
+    
+<br>
+
+        <!-- /.container-fluid -->
+
+        <!-- Sticky Footer -->
+        <footer class="sticky-footer">
+          <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+              <span>Copyright © Puisiku 2018</span>
+            </div>
+          </div>
+        </footer>
+
+      </div>
+
+      </body>
+</html>
